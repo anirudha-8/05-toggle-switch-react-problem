@@ -7,7 +7,12 @@ const ToggleSwitch = () => {
 	};
 	return (
 		<div>
-			<input type="checkbox" name="toggle" id="toggle" />
+			<input
+				type="checkbox"
+				name="toggle"
+				id="toggle"
+				onChange={handleToggle}
+			/>
 			<label htmlFor="toggle">{isToggled ? "On" : "Off"}</label>
 		</div>
 	);
